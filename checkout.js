@@ -1,6 +1,6 @@
 // ===== SEÇÃO 1: CARRINHO (laços de repeti ção) =====
-{
-    function calcularSubtotal(itens) {
+
+function calcularSubtotal(itens) {
   let subtotal = 0;
   let i = 0;
   while (i < itens.length) {
@@ -10,7 +10,7 @@
   return subtotal;
 }
 
-    function contarItens(itens) {
+function contarItens(itens) {
   let total = 0;
   let i = 0;
   while (i < itens.length) {
@@ -19,20 +19,25 @@
   }
   return total;
 }
-}
-function contarItens ( itens ) {
-}
+
+
 // ===== SEÇÃO 2: CUPOM ( estruturas condicionais ) =====
+
 function aplicarCupom ( subtotal , codigo ) {
-// TODO
+    // TODO
 }
-// ===== SEÇÃO 3: CHECKOUT ( integra ção) =====
+
+
+// ===== SEÇÃO 3: CHECKOUT ( integração) =====
+
 function finalizarCompra ( itens , codigoCupom ) {2
-return { subtotal : 0 , desconto : 0 , total : 0 }; // TODO : integrar carrinho e cupom
+    return { subtotal : 0 , desconto : 0 , total : 0 }; // TODO : integrar carrinho e cupom
 }
+
+
 // ===== SEÇÃO 4: TESTES =====
 const itens = [
-{ nome : " Camiseta ", preco : 50 , quantidade : 2 } ,
-{ nome : "Tênis", preco : 150 , quantidade : 1 }
+    { nome: " Camiseta ", preco: 50 , quantidade: 2 } ,
+    { nome: "Tênis", preco: 150 , quantidade: 1 }
 ];
-console . log ( finalizarCompra ( itens , " DESC10 ") ) ;
+console.log( finalizarCompra ( itens , " DESC10 ") ) ;
