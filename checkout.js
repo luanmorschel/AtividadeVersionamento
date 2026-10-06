@@ -16,6 +16,11 @@ function aplicarCupom(subtotal, codigo) {
 }
 
 // ===== SEÇÃO 3: CHECKOUT (integração) =====
+function finalizarCompra(itens, codigoCupom) {
+  const subtotal = calcularSubtotal(itens);
+  const total = aplicarCupom(subtotal, codigoCupom);
+  return { subtotal, desconto: subtotal - total, total };
+}
 
 // ===== SEÇÃO 4: TESTES =====
 const itens = [
