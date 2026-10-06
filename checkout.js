@@ -10,6 +10,15 @@
   return subtotal;
 }
 
+    function contarItens(itens) {
+  let total = 0;
+  let i = 0;
+  while (i < itens.length) {
+    total = total + itens[i].quantidade;
+    i++;
+  }
+  return total;
+}
 }
 function contarItens ( itens ) {
 }
