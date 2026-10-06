@@ -12,6 +12,7 @@ function aplicarCupom(subtotal, codigo) {
     valor = subtotal - 15;
   }
 
+  return Math.max(valor, 0);
 }
 
 // ===== SEÇÃO 3: CHECKOUT (integração) =====
