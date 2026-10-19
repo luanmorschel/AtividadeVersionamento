@@ -1,4 +1,12 @@
 // ===== SEÇÃO 1: CARRINHO (laços de repetição) =====
+function calcularSubtotal(itens) {
+  // TODO
+}
+
+function contarItens(itens) {
+  // TODO
+}
+
 
 // ===== SEÇÃO 2: CUPOM (estruturas condicionais) =====
 function aplicarCupom(subtotal, codigo) {
@@ -15,6 +23,7 @@ function aplicarCupom(subtotal, codigo) {
   return Math.max(valor, 0);
 }
 
+
 // ===== SEÇÃO 3: CHECKOUT (integração) =====
 function finalizarCompra(itens, codigoCupom) {
   const subtotal = calcularSubtotal(itens);
@@ -22,10 +31,11 @@ function finalizarCompra(itens, codigoCupom) {
   return { subtotal, desconto: subtotal - total, total };
 }
 
+
 // ===== SEÇÃO 4: TESTES =====
 const itens = [
   { nome: "Intel i5", preco: 450, quantidade: 1 },
   { nome: "Cooler 90mm", preco: 40, quantidade: 6 }
 ];
 
-console.log(finalizarCompra(itens, "DESC10")); // { subtotal: 250, desconto: 25, total: 225 }
+console.log(finalizarCompra(itens, "DESC10")); // { subtotal: 690, desconto: 69, total: 621 }
